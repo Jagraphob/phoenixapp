@@ -18,6 +18,7 @@ defmodule PhoenixappWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    live "/tower", TowerLive
   end
 
   # Other scopes may use custom stacks.
